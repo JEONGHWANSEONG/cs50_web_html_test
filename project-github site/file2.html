@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<meta charset='utf-8'/>
+<head>
+    <meta charset='utf-8'/>
+    <title>Document</title>
+    <style type="text/css">
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #header{
+            width:960px;
+            height:100px;
+            border:solid 1px;
+            display: inline;
+            background-color: #F5F5F5;
+        }
+        #content{
+            width: 980px;
+            border:solid 1px;
+            margin-top:5px;
+            position:relative;
+        }
+        #main{
+            width:750px;
+            float:left;
+        }
+        #side{
+            width:200px;
+            height:500px;
+            border: none;
+            float:right;
+        }
+        #side-tb{
+            border-style: none;
+            border-left: solid 1px;
+            border-left-color: #F8F8F8;
+            margin-top: 30px;
+            box-shadow: inset 4px #F8F8F8;
+        }
+        .side-list{
+            border-bottom: none;
+            border-top: none;
+            font-weight: bold;
+            padding: 13px;
+        }
+        #re-box{
+            border-bottom: solid 1px;
+            border-bottom-color: #F8F8F8;
+            box-shadow: 0px 4px #F8F8F8;
+        }
+        #code-box{
+            border-top: solid 1px;
+            border-bottom: solid 1px;
+            border-right: solid 3px;
+            border-right-color: #D67828;
+            border-bottom-color: #F8F8F8;
+            border-top-color: #F8F8F8;
+            box-shadow: 0px 4px #F8F8F8;
+        }
+        #footer{
+            width:960px;
+            height:80px;
+            border-top:solid 1px;
+            margin-top:20px;
+            clear: both;
+            border-top-color: #ECECEC;
+        }
+        #readme {
+            width: 100%;
+            border: solid 1px;
+            padding: 7px 0px;
+            background-color: #F5F5F5;
+            border-color: #ECECEC;
+        }
+        #readme-main{
+            border: 1px solid;
+            margin-bottom: 20px;
+            border-color: #ECECEC;
+        }
+        #knowre {
+            padding: 20px;
+        }
+        ul.stat{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+            font-size: 20px;
+            border: solid 1px;
+            border-bottom-width: 10px;
+            border-bottom-color: #F1E05A;
+            border-top-color: #ECECEC;
+            border-left-color: #ECECEC;
+            border-right-color: #ECECEC;
+
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            margin-left: 70px;
+            font-size: 17px;
+        }
+        li#first{
+            margin-left: 45px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        #right {
+            text-align:right;
+        }
+        td{
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            border-color: #ECECEC;;
+            padding: 7px;
+        }
+        td.colored-row{
+            background-color: #E6F1F6;
+        }
+        td.grey{
+            background-color: #F8F8F8;
+        }
+        .blue-text{
+            color: blue;
+        }
+        .grey-text{
+            color: #959595;
+        }
+        .octicon{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 3px;
+            right: 4px;
+        }
+        h3 {
+            color: #959595;
+        }
+        .foot {
+            font-size: 13px;
+            margin-left: 10px;
+            margin-top: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+        .float-r{
+            float:right;
+        }
+        #float-mid{
+            position:relative;
+            left: 110px;
+        }
+        #side{
+            height:500px;
+            float:right;
+            border-style: none;
+        }
+        #branch-table{
+            border: 1px solid;
+            margin-bottom: 20px;
+            border-color: #ECECEC;
+        }
+        .side-p{
+            font-size: 13px;
+        }
+        .side-p2{
+            font-size: 13px;
+            color: #959595;
+        }
+        #url-box{
+            border: solid 1px;
+            border-color: #959595;
+            border-radius: 5px;
+            height: 30px;
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+        #in-box{
+            float: right;
+            width: 20px;
+            display: inline;
+            border-radius: 5px;
+            height: 30px;
+            padding-left: 10px;
+            background: linear-gradient(360deg, #f5f5f5, white);
+
+        }
+        #url-box2{
+            border: solid 1px;
+            border-color: #959595;
+            border-radius: 5px;
+            height: 30px;
+            padding-left: 10px;
+            padding-top: 3px;
+            background: linear-gradient(360deg, #f5f5f5, white);
+            font-weight: bold;
+            text-align: center;
+        }
+        #url-box3{
+            border: solid 1px;
+            border-color: #959595;
+            border-radius: 5px;
+            height: 30px;
+            text-align: center;
+            padding-left: 10px;
+            padding-top: 3px;
+            margin-top: 15px;
+            background: linear-gradient(360deg, #f5f5f5, white);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+<header id="header" class="">
+    <div id="intro" class="">
+
+    </div>
+    <div id="banner" class="">
+
+    </div>
+    <div id="title" class="">
+
+    </div>
+</header>
+
+<div id="content" class="">
+    <div id="main" class="">
+        <div id="left">
+            <h3>KnowRe web development curriculum for noobs</h3>
+            <div id="status">
+                <ul class="stat">
+                    <li id="first"><img class="octicon" src="svg/history.svg"><strong>26</strong> commits</li>
+                    <li><img class="octicon" src="svg/git-branch.svg"><strong>2</strong> branches</li>
+                    <li><img class="octicon" src="svg/tag.svg"><strong>0</strong> releases</li>
+                    <li><img class="octicon" src="svg/organization.svg"><strong>1</strong> contributer</li>
+                </ul>
+            </div>
+            <div id="branch">
+                <h4><img class="octicon" src="svg/git-compare.svg">branch 2016 <span class="blue-text">WebDevCurriculum</span> / +<img class="octicon" class="float-r" src="svg/list-unordered.svg"></h4>
+            </div>
+            <div id="branch-table">
+                <table>
+                    <tr>
+                        <td class="grey">This is 5 branches ahead of master.</td>
+                        <td class="grey"></td>
+                        <td class="grey" id="right"><img class="octicon" src="svg/git-pull-request.svg">Pull request <img class="octicon" src="svg/diff.svg">compare</td>
+                    </tr>
+                    <tr>
+                        <td class="colored-row">...</td>
+                        <td class="colored-row"></td>
+                        <td class="colored-row"></td>
+                    </tr>
+                    <tr>
+                        <td class="grey"><img class="octicon" src="svg/graph.svg"><strong>Kivol</strong> authored 19 hours ago</td>
+                        <td class="grey"></td>
+                        <td class="grey" id="right">latest commit 5ead7a7a36<img class="octicon" src="svg/clippy.svg"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="octicon" src="svg/file-directory.svg">Part 0. git/<span class="blue-text">Quest 0. Hello, git</span></td>
+                        <td>Quest 0 - Added checklist</td>
+                        <td id="right">19 hours ago</td>
+                    </tr>
+                    <tr>
+                        <td><img class="octicon" src="svg/file-directory.svg"><span class="blue-text">old</span></td>
+                        <td>New curriculum 2016 - started</td>
+                        <td id="right">5 days ago</td>
+                    </tr>
+                    <tr>
+                        <td><img class="octicon" src="svg/file.svg"><span class="blue-text">LICENSE</span></td>
+                        <td>New curriculum 2016 - started</td>
+                        <td id="right">5 days ago</td>
+                    </tr>
+                    <tr>
+                        <td><img class="octicon" src="svg/file.svg"><span class="blue-text">README.md</span></td>
+                        <td>...</td>
+                        <td id="right">19 hour ago</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="readme-main">
+            <div id="readme"><img class="octicon" src="svg/file.svg"><strong>README.md</strong></div>
+            <div id="knowre">
+                <h2>KnowRe web development curriculum<br>2016</h2>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="side" class="">
+        <table id="side-tb">
+        <tr>
+            <td id="code-box" class="side-list"><img class="octicon"><span class="blue-text"><strong>Code</strong></td>
+        </tr>
+        <tr>
+            <td class="side-list"><img class="octicon"><span class="blue-text">Issues</td>
+        </tr>
+        <tr>
+            <td id="re-box" class="side-list" ><img class="octicon"><span class="blue-text"> Pull Requests</td>
+        </tr>
+        <tr>
+            <td class="side-list"><img class="octicon"><span class="blue-text">Pulse</td>
+        </tr>
+        <tr>
+            <td class="side-list"><img class="octicon"><span class="blue-text">Graphs</span></td>
+        </tr>
+     </table>
+        <p class="side-p"><strong>HTTPS</strong> <span class="grey-text">clone URL</span></p>
+        <div id="url-box">
+            http://github.com <div id="in-box">img</div>
+        </div>
+        <p class="side-p2">You can clone with <span class="blue-text">HTTPS</span> or <span class="blue-text">Subversion</span></p>
+        <div id="url-box2">Clone in Desktop</div>
+        <div id="url-box3">Download Zip</div>
+    </div>
+</div>
+
+<footer id="footer" class="">
+    <ul>
+        <li class="foot">2015 Github,Inc.</li>
+        <li class="foot">Terms</li>
+        <li class="foot">Privacy</li>
+        <li class="foot">Security</li>
+        <li class="foot">Contact</li>
+        <li class="foot">Help</li>
+        <li id="float-mid"><img class="octicon" src="svg/mark-github.svg"></li>
+        <div class="float-r">
+            <li class="foot">Status</li>
+            <li class="foot">API</li>
+            <li class="foot">Training</li>
+            <li class="foot">Shop</li>
+            <li class="foot">Blog</li>
+            <li class="foot">About</li>
+            <li class="foot">Pricing</li>
+        </div>
+    </ul>
+</footer>
+</div>
+</body>
+</html>
