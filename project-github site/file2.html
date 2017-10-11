@@ -5,21 +5,19 @@
     <meta charset='utf-8'/>
     <title>Document</title>
     <style type="text/css">
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
         .wrap{
             width: 1000px;
             margin: 0 auto;
         }
-        #header{
-            width:960px;
-            height:100px;
-            border:solid 1px;
-            display: inline;
-            background-color: #F5F5F5;
-        }
         #content{
             width: 980px;
             border:solid 1px;
-            margin-top:5px;
+            border-color: #ECECEC;
             position:relative;
         }
         #main{
@@ -94,7 +92,6 @@
             border-top-color: #ECECEC;
             border-left-color: #ECECEC;
             border-right-color: #ECECEC;
-
         }
         ul{
             list-style-type: none;
@@ -144,6 +141,10 @@
             position: relative;
             top: 3px;
             right: 4px;
+        }
+        .octicon1{
+            width: 90px;
+            padding-top: 10px;
         }
         h3 {
             color: #959595;
@@ -196,7 +197,6 @@
             height: 30px;
             padding-left: 10px;
             background: linear-gradient(360deg, #f5f5f5, white);
-
         }
         #url-box2{
             border: solid 1px;
@@ -222,134 +222,173 @@
             font-weight: bold;
         }
 
+        #banner{
+            background-color: #F5F5F5;
+            height: 50px;
+            border-bottom: 1px solid;
+            border-color: #ECECEC;
+        }
+        .search{
+            border: solid 3px;
+            border-color: #ECECEC;
+            border-radius: 5px;
+            height: 30px;
+            padding-left: 10px;
+            margin-bottom: 0px;
+            background: white;
+            font-weight: bold;
+            width: 500px;
+            box-shadow: inset 0px 1px 2px rgba(149, 149, 149, 0.52)
+        }
+        #banner-ul{
+            border:solid 1px;
+            height: 15px;
+            width: 400px;
+            position: absolute;
+        }
+        .banner-li{
+            margin-left: 10px;
+            display: inline;
+            float: none;
+        }
+        #title{
+            height: 70px;
+
+        }
     </style>
 </head>
 <body>
 <div class="wrap">
-<header id="header" class="">
-    <div id="intro" class="">
+    <header id="header" class="">
+        <div id="banner" class="">
+            <img class="octicon1" src="svg/logo-github.svg">
+            <input class="search" type="search" placeholder="search" value="" >
+            <ul id="banner-ul">
+                <li class="banner-li">Explore</li>
+                <li class="banner-li">Features</li>
+                <li class="banner-li">Enterprise</li>
+                <li class="banner-li">Pricing</li>
+            </ul>
+        </div>
 
-    </div>
-    <div id="banner" class="">
 
-    </div>
-    <div id="title" class="">
+        <div id="title" class="">
+            d
+        </div>
+    </header>
 
-    </div>
-</header>
+    <div id="content" class="">
+        <div id="main" class="">
+            <div id="left">
+                <h3>KnowRe web development curriculum for noobs</h3>
+                <div id="status">
+                    <ul class="stat">
+                        <li id="first"><img class="octicon" src="svg/history.svg"><strong>26</strong> commits</li>
+                        <li><img class="octicon" src="svg/git-branch.svg"><strong>2</strong> branches</li>
+                        <li><img class="octicon" src="svg/tag.svg"><strong>0</strong> releases</li>
+                        <li><img class="octicon" src="svg/organization.svg"><strong>1</strong> contributer</li>
+                    </ul>
+                </div>
+                <div id="branch">
+                    <h4><img class="octicon" src="svg/git-compare.svg">branch 2016 <span class="blue-text">WebDevCurriculum</span> / +<img class="octicon" class="float-r" src="svg/list-unordered.svg"></h4>
+                </div>
+                <div id="branch-table">
+                    <table>
+                        <tr>
+                            <td class="grey">This is 5 branches ahead of master.</td>
+                            <td class="grey"></td>
+                            <td class="grey" id="right"><img class="octicon" src="svg/git-pull-request.svg">Pull request <img class="octicon" src="svg/diff.svg">compare</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-row">...</td>
+                            <td class="colored-row"></td>
+                            <td class="colored-row"></td>
+                        </tr>
+                        <tr>
+                            <td class="grey"><img class="octicon" src="svg/graph.svg"><strong>Kivol</strong> authored 19 hours ago</td>
+                            <td class="grey"></td>
+                            <td class="grey" id="right">latest commit 5ead7a7a36<img class="octicon" src="svg/clippy.svg"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="octicon" src="svg/file-directory.svg">Part 0. git/<span class="blue-text">Quest 0. Hello, git</span></td>
+                            <td>Quest 0 - Added checklist</td>
+                            <td id="right">19 hours ago</td>
+                        </tr>
+                        <tr>
+                            <td><img class="octicon" src="svg/file-directory.svg"><span class="blue-text">old</span></td>
+                            <td>New curriculum 2016 - started</td>
+                            <td id="right">5 days ago</td>
+                        </tr>
+                        <tr>
+                            <td><img class="octicon" src="svg/file.svg"><span class="blue-text">LICENSE</span></td>
+                            <td>New curriculum 2016 - started</td>
+                            <td id="right">5 days ago</td>
+                        </tr>
+                        <tr>
+                            <td><img class="octicon" src="svg/file.svg"><span class="blue-text">README.md</span></td>
+                            <td>...</td>
+                            <td id="right">19 hour ago</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="readme-main">
+                    <div id="readme"><img class="octicon" src="svg/file.svg"><strong>README.md</strong></div>
+                    <div id="knowre">
+                        <h2>KnowRe web development curriculum<br>2016</h2>
+                    </div>
+                </div>
 
-<div id="content" class="">
-    <div id="main" class="">
-        <div id="left">
-            <h3>KnowRe web development curriculum for noobs</h3>
-            <div id="status">
-                <ul class="stat">
-                    <li id="first"><img class="octicon" src="svg/history.svg"><strong>26</strong> commits</li>
-                    <li><img class="octicon" src="svg/git-branch.svg"><strong>2</strong> branches</li>
-                    <li><img class="octicon" src="svg/tag.svg"><strong>0</strong> releases</li>
-                    <li><img class="octicon" src="svg/organization.svg"><strong>1</strong> contributer</li>
-                </ul>
             </div>
-            <div id="branch">
-                <h4><img class="octicon" src="svg/git-compare.svg">branch 2016 <span class="blue-text">WebDevCurriculum</span> / +<img class="octicon" class="float-r" src="svg/list-unordered.svg"></h4>
-            </div>
-            <div id="branch-table">
-                <table>
-                    <tr>
-                        <td class="grey">This is 5 branches ahead of master.</td>
-                        <td class="grey"></td>
-                        <td class="grey" id="right"><img class="octicon" src="svg/git-pull-request.svg">Pull request <img class="octicon" src="svg/diff.svg">compare</td>
-                    </tr>
-                    <tr>
-                        <td class="colored-row">...</td>
-                        <td class="colored-row"></td>
-                        <td class="colored-row"></td>
-                    </tr>
-                    <tr>
-                        <td class="grey"><img class="octicon" src="svg/graph.svg"><strong>Kivol</strong> authored 19 hours ago</td>
-                        <td class="grey"></td>
-                        <td class="grey" id="right">latest commit 5ead7a7a36<img class="octicon" src="svg/clippy.svg"></td>
-                    </tr>
-                    <tr>
-                        <td><img class="octicon" src="svg/file-directory.svg">Part 0. git/<span class="blue-text">Quest 0. Hello, git</span></td>
-                        <td>Quest 0 - Added checklist</td>
-                        <td id="right">19 hours ago</td>
-                    </tr>
-                    <tr>
-                        <td><img class="octicon" src="svg/file-directory.svg"><span class="blue-text">old</span></td>
-                        <td>New curriculum 2016 - started</td>
-                        <td id="right">5 days ago</td>
-                    </tr>
-                    <tr>
-                        <td><img class="octicon" src="svg/file.svg"><span class="blue-text">LICENSE</span></td>
-                        <td>New curriculum 2016 - started</td>
-                        <td id="right">5 days ago</td>
-                    </tr>
-                    <tr>
-                        <td><img class="octicon" src="svg/file.svg"><span class="blue-text">README.md</span></td>
-                        <td>...</td>
-                        <td id="right">19 hour ago</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="readme-main">
-            <div id="readme"><img class="octicon" src="svg/file.svg"><strong>README.md</strong></div>
-            <div id="knowre">
-                <h2>KnowRe web development curriculum<br>2016</h2>
-            </div>
-            </div>
+        </div>
 
+        <div id="side" class="">
+            <table id="side-tb">
+                <tr>
+                    <td id="code-box" class="side-list"><img class="octicon" src="svg/code.svg"><span class="blue-text"><strong>Code</strong></td>
+                </tr>
+                <tr>
+                    <td class="side-list"><img class="octicon" src="svg/issue-opened.svg"><span class="blue-text">Issues</td>
+                </tr>
+                <tr>
+                    <td id="re-box" class="side-list" ><img class="octicon" src="svg/git-pull-request.svg"><span class="blue-text"> Pull Requests</td>
+                </tr>
+                <tr>
+                    <td class="side-list"><img class="octicon" src="svg/pulse.svg"><span class="blue-text">Pulse</td>
+                </tr>
+                <tr>
+                    <td class="side-list"><img class="octicon" src="svg/graph.svg"><span class="blue-text">Graphs</span></td>
+                </tr>
+            </table>
+            <p class="side-p"><strong>HTTPS</strong> <span class="grey-text">clone URL</span></p>
+            <div id="url-box">
+                http://github.com <div id="in-box"><img class="octicon" src="svg/clippy.svg"></div>
+            </div>
+            <p class="side-p2">You can clone with <span class="blue-text">HTTPS</span> or <span class="blue-text">Subversion</span><img class="octicon" src="svg/question.svg"></p>
+            <div id="url-box2"><img class="octicon" src="svg/desktop-download.svg">Clone in Desktop</div>
+            <div id="url-box3"><img class="octicon" src="svg/cloud-download.svg">Download Zip</div>
         </div>
     </div>
 
-    <div id="side" class="">
-        <table id="side-tb">
-        <tr>
-            <td id="code-box" class="side-list"><img class="octicon"><span class="blue-text"><strong>Code</strong></td>
-        </tr>
-        <tr>
-            <td class="side-list"><img class="octicon"><span class="blue-text">Issues</td>
-        </tr>
-        <tr>
-            <td id="re-box" class="side-list" ><img class="octicon"><span class="blue-text"> Pull Requests</td>
-        </tr>
-        <tr>
-            <td class="side-list"><img class="octicon"><span class="blue-text">Pulse</td>
-        </tr>
-        <tr>
-            <td class="side-list"><img class="octicon"><span class="blue-text">Graphs</span></td>
-        </tr>
-     </table>
-        <p class="side-p"><strong>HTTPS</strong> <span class="grey-text">clone URL</span></p>
-        <div id="url-box">
-            http://github.com <div id="in-box">img</div>
-        </div>
-        <p class="side-p2">You can clone with <span class="blue-text">HTTPS</span> or <span class="blue-text">Subversion</span></p>
-        <div id="url-box2">Clone in Desktop</div>
-        <div id="url-box3">Download Zip</div>
-    </div>
-</div>
-
-<footer id="footer" class="">
-    <ul>
-        <li class="foot">2015 Github,Inc.</li>
-        <li class="foot">Terms</li>
-        <li class="foot">Privacy</li>
-        <li class="foot">Security</li>
-        <li class="foot">Contact</li>
-        <li class="foot">Help</li>
-        <li id="float-mid"><img class="octicon" src="svg/mark-github.svg"></li>
-        <div class="float-r">
-            <li class="foot">Status</li>
-            <li class="foot">API</li>
-            <li class="foot">Training</li>
-            <li class="foot">Shop</li>
-            <li class="foot">Blog</li>
-            <li class="foot">About</li>
-            <li class="foot">Pricing</li>
-        </div>
-    </ul>
-</footer>
+    <footer id="footer" class="">
+        <ul>
+            <li class="foot">2015 Github,Inc.</li>
+            <li class="foot">Terms</li>
+            <li class="foot">Privacy</li>
+            <li class="foot">Security</li>
+            <li class="foot">Contact</li>
+            <li class="foot">Help</li>
+            <li id="float-mid"><img class="octicon" src="svg/mark-github.svg"></li>
+            <div class="float-r">
+                <li class="foot">Status</li>
+                <li class="foot">API</li>
+                <li class="foot">Training</li>
+                <li class="foot">Shop</li>
+                <li class="foot">Blog</li>
+                <li class="foot">About</li>
+                <li class="foot">Pricing</li>
+            </div>
+        </ul>
+    </footer>
 </div>
 </body>
 </html>
