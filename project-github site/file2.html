@@ -11,17 +11,17 @@
             margin: 0 auto;
         }
         .wrap{
-            width: 1000px;
+            width: 1050px;
             margin: 0 auto;
         }
         #content{
-            width: 980px;
+            width: 1050px;
             border:solid 1px;
             border-color: #ECECEC;
             position:relative;
         }
         #main{
-            width:750px;
+            width:800px;
             float:left;
         }
         #side{
@@ -58,7 +58,7 @@
             box-shadow: 0px 4px #F8F8F8;
         }
         #footer{
-            width:960px;
+            width:1050px;
             height:80px;
             border-top:solid 1px;
             margin-top:20px;
@@ -143,8 +143,13 @@
             right: 4px;
         }
         .octicon1{
-            width: 90px;
+            width: 95px;
             padding-top: 10px;
+            margin-right: 5px;
+            margin-top: 8px;
+            display: inline;
+            float: left;
+
         }
         h3 {
             color: #959595;
@@ -158,10 +163,17 @@
         }
         .float-r{
             float:right;
+
+        }
+        #octicon3{
+            float:right;
+            height: 25px;
+
         }
         #float-mid{
             position:relative;
             left: 110px;
+            margin-top: 18px;
         }
         #side{
             height:500px;
@@ -223,44 +235,132 @@
         }
 
         #banner{
-            background-color: #F5F5F5;
-            height: 50px;
+            background: #F5F5F5 repeat-x;
+            height: 65px;
             border-bottom: 1px solid;
             border-color: #ECECEC;
+
         }
+
         .search{
             border: solid 3px;
             border-color: #ECECEC;
             border-radius: 5px;
             height: 30px;
             padding-left: 10px;
-            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-left: 5px;
             background: white;
             font-weight: bold;
-            width: 500px;
+            width: 400px;
             box-shadow: inset 0px 1px 2px rgba(149, 149, 149, 0.52)
+            display: inline;
         }
         #banner-ul{
-            border:solid 1px;
+            border: none;
             height: 15px;
-            width: 400px;
-            position: absolute;
+            width: 200px;
+            display: inline;
+
+
         }
         .banner-li{
             margin-left: 10px;
-            display: inline;
             float: none;
+            display: inline;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+        #banner-btn{
+            float: right;
+            margin-top: 15px;
+            margin-right: 8px;
+            display: inline;
+        }
+        input.banner-button1{
+            text-decoration: none;
+            color: white;
+            padding: 10px 17px;
+            display: inline-block;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.21);
+            border-bottom: 4px solid rgba(0,0,0,0.21);
+            border-radius: 4px;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+
+            background: rgba(130,200,160,1);
+            background: -moz-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(130,200,160,1)), color-stop(100%, rgba(130,199,158,1)));
+            background: -webkit-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
+            background: -o-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
+            background: -ms-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
+            background: linear-gradient(to bottom, rgba(130,200,160,1) 0%, rgba(124, 185, 149, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c8a0', endColorstr='#82c79e', GradientType=0 );
+        }
+        .banner-button1:active  {background: #72B08E;}
+
+        input.banner-button2{
+            text-decoration: none;
+            color: white;
+            padding: 10px 17px;
+            display: inline-block;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.21);
+            border-bottom: 4px solid rgba(0,0,0,0.21);
+            border-radius: 4px;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+
         }
         #title{
-            height: 70px;
+            height: 80px;
+            float: none;
+        }
+        #title-p{
+            border: none;
+            width: 700px;
+            float: left;
+            font-weight: 500;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        #title-button{
+            border: none;
+            float: right;
+            margin-top: 30px;
+        }
+        .title-btn{
 
+        }
+        #back{
+            border-bottom: 1px solid;
+            border-color: #ECECEC;
+            background: #f5f5f5;
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            z-index: -1;
+        }
+        #back2{
+            position: absolute;
+            z-index: -1;
+            border-bottom: solid 2px;
+            width: 100%;
+            border-color: #ECECEC;
+        }
+        .octicon-t{
+            height: 40px;
+            float: left;
+            margin-top: 25px;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
+<div id="back"></div>
 <div class="wrap">
     <header id="header" class="">
-        <div id="banner" class="">
+        <div id="banner" class="" >
             <img class="octicon1" src="svg/logo-github.svg">
             <input class="search" type="search" placeholder="search" value="" >
             <ul id="banner-ul">
@@ -269,14 +369,21 @@
                 <li class="banner-li">Enterprise</li>
                 <li class="banner-li">Pricing</li>
             </ul>
+            <div id="banner-btn">
+            <input class="banner-button1" type="button" value="sign up" >
+            <input class="banner-button2" type="button" value="sign in">
         </div>
-
-
+        </div>
         <div id="title" class="">
-            d
+            <img class="octicon-t" src="svg/repo.svg"><p id="title-p"><span class="blue-text">KnowRe / <strong>WebDevCurriculum</strong></span></p>
+            <div id="title-button">
+            <input class="title-btn" type="button" value="Watch">
+            <input class="title-btn" type="button" value="Star">
+            <input class="title-btn" type="button" value="Fork">
+            </div>
         </div>
     </header>
-
+    <div id="back2"></div>
     <div id="content" class="">
         <div id="main" class="">
             <div id="left">
@@ -290,7 +397,7 @@
                     </ul>
                 </div>
                 <div id="branch">
-                    <h4><img class="octicon" src="svg/git-compare.svg">branch 2016 <span class="blue-text">WebDevCurriculum</span> / +<img class="octicon" class="float-r" src="svg/list-unordered.svg"></h4>
+                    <h4><img class="octicon" src="svg/git-compare.svg">branch 2016 <span class="blue-text">WebDevCurriculum</span> / +<img id="octicon3" class="float-r" src="svg/list-unordered.svg"></h4>
                 </div>
                 <div id="branch-table">
                     <table>
@@ -363,7 +470,7 @@
             <div id="url-box">
                 http://github.com <div id="in-box"><img class="octicon" src="svg/clippy.svg"></div>
             </div>
-            <p class="side-p2">You can clone with <span class="blue-text">HTTPS</span> or <span class="blue-text">Subversion</span><img class="octicon" src="svg/question.svg"></p>
+            <p class="side-p2">You can clone with <span class="blue-text">HTTPS</span> or <span class="blue-text">Subversion </span> <img class="octicon3" src="svg/question.svg"></p>
             <div id="url-box2"><img class="octicon" src="svg/desktop-download.svg">Clone in Desktop</div>
             <div id="url-box3"><img class="octicon" src="svg/cloud-download.svg">Download Zip</div>
         </div>
@@ -371,7 +478,7 @@
 
     <footer id="footer" class="">
         <ul>
-            <li class="foot">2015 Github,Inc.</li>
+            <li class="foot"><span class="grey-text">Github,Inc.</span></li>
             <li class="foot">Terms</li>
             <li class="foot">Privacy</li>
             <li class="foot">Security</li>
